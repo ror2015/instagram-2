@@ -15,3 +15,35 @@
  */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+
+
+.col-lg-8 {
+  background-color: #ffffff;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 6px;
+  border-color: #CCCCCC;
+}
+.row {
+  background-image: url(http://www.bankoboev.ru/fons/OTE4Mw==/Bankoboev.Ru_seryi_ornament_na_serom_fone.png) ;
+  background-repeat: repeat;
+
+}
+
+.description {
+  border: 1px solid;
+  border-color: rgb(206, 201, 204);
+  width: 65%;
+}
+.Comment {
+  border-left: 1px solid;
+  border-right: 1px solid ;
+  border-color: rgb(206, 201, 204);
+  width: 65%;
+}
+.top {
+  border-top: 2px ridge;
+  border-bottom: 2px ridge;
+  border-color: #cc0000;
+}
