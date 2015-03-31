@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy, :dislike]
 
   # GET /posts
   # GET /posts.json
@@ -8,7 +8,11 @@ class PostsController < ApplicationController
     @post = Post.new
   end
   def dislike
-
+    if @post.dislike_count.nil?
+      @post.dislike_count = 0
+    end
+    @post.dislike_count = @post.dislike_count + 1
+    @post.save
     redirect_to posts_path
   end
   # GET /posts/1

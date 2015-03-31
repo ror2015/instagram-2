@@ -17,7 +17,10 @@
           = link_to 'New Post', new_post_path
         %br
         %br
-        = image_tag post.photo, size: '800x600'
+          = link_to 'Dislike: ', dislike_post_path(post)
+          = post.dislike_count
+          %br
+          = image_tag post.photo, size: '800x600'
 
         .user
           %br
@@ -26,6 +29,7 @@
         %center
           .description
             = post.description
+
         %br
         %center
           .Comment
